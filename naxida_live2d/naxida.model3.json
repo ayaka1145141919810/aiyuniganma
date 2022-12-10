@@ -1,71 +1,71 @@
 {
-  "Version": 3,
-  "Type": 0,
-  "FileReferences": {
-    "Moc": "naxida.moc3",
-    "Textures": [
-      "naxida.4096/texture_00.png"
-    ],
-    "Physics": "naxida.physics3.json",
-    "PhysicsV2": {
-      "File": "naxida.physics3.json"
-    },
-    "Motions": {
-      "Idle": [
-        {
-          "File": "motions/idle.motion3.json",
-          "FadeIn": 0,
-          "FadeOut": 0
+    "Version": 3,
+    "Type": 0,
+    "FileReferences": {
+        "Moc": "naxida.moc3",
+        "Textures": [
+            "naxida.4096/texture_00.png"
+        ],
+        "Physics": "naxida.physics3.json",
+        "Motions": {
+            "File": "motions/complete.motion3.json"
         }
-      ],
-      
-    }
-  },
-  "Controllers": {
-    "ParamHit": {},
-    "ParamLoop": {},
-    "KeyTrigger": {},
-    "ParamTrigger": {},
-    "AreaTrigger": {},
-    "HandTrigger": {},
-    "EyeBlink": {
-      "MinInterval": 500,
-      "MaxInterval": 6000
     },
-    "LipSync": {
-      "Gain": 5.0
+    "Controllers": {
+        "ParamHit": {},
+        "ParamLoop": {},
+        "KeyTrigger": {},
+        "ParamTrigger": {},
+        "AreaTrigger": {},
+        "HandTrigger": {},
+        "EyeBlink": {
+            "MinInterval": 500,
+            "MaxInterval": 6000
+        },
+        "LipSync": {
+            "Gain": 5
+        },
+        "MouseTracking": {
+            "SmoothTime": 0.15,
+            "Enabled": true
+        },
+        "AutoBreath": {},
+        "ExtraMotion": {},
+        "Accelerometer": {},
+        "Microphone": {},
+        "Transform": {},
+        "FaceTracking": {},
+        "HandTracking": {},
+        "ParamValue": {},
+        "PartOpacity": {},
+        "ArtmeshOpacity": {},
+        "ArtmeshColor": {},
+        "ArtmeshCulling": {
+            "DefaultMode": 0
+        },
+        "IntimacySystem": {
+            "Enabled": true
+        }
     },
-    "MouseTracking": {
-      "SmoothTime": 0.15,
-      "Enabled": true
+    "HitAreas": [
+        {
+            "Name": "l_e_w",
+            "Id": "ArtMesh217",
+            "Motion": "Choices"
+        }
+    ],
+    "Options": {
+        "Id": "1",
+        "MaskBufferSize": 1024
     },
-    "AutoBreath": {},
-    "ExtraMotion": {},
-    "Accelerometer": {},
-    "Microphone": {},
-    "Transform": {},
-    "FaceTracking": {},
-    "HandTracking": {},
-    "ParamValue": {},
-    "PartOpacity": {},
-    "ArtmeshOpacity": {},
-    "ArtmeshColor": {},
-    "ArtmeshCulling": {
-      "DefaultMode": 0
-    },
-    "IntimacySystem": {
-      "Enabled": true
-    }
-  },
-  "HitAreas": [
+    "Groups": [
     {
-      "Name": "l_e_w",
-      "Id": "ArtMesh217",
-      "Motion": "Choices"
+      "Target": "Parameter",
+      "Name": "LipSync",
+      "Ids": [
+        "ParamMouthOpenY"
+
+    ]
     }
-  ],
-  "Options": {
-    "Id": "1",
-    "MaskBufferSize": 1024
-  }
+  ]
 }
