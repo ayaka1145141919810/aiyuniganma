@@ -4,7 +4,7 @@
   "FileReferences": {
     "Moc": "naxida.moc3",
     "Textures": [
-      "naxida.4096/texture_00.png"
+      "texture/texture_00.png"
     ],
     "Physics": "naxida.physics3.json",
     "PhysicsV2": {
